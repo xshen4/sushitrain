@@ -1,18 +1,18 @@
 'use strict';
 
-angular.module('myApp.about', ['ngRoute'])
+angular.module('myApp.resume', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/about', {
-    templateUrl: 'about/about.html',
-    controller: 'About'
+  $routeProvider.when('/resume', {
+    templateUrl: 'resume/resume.html',
+    controller: 'Resume'
   });
 }])
 
-.controller('About', function($scope) {
-  $scope.image = 'about/images/sushi-cat-logo.png';
-  $scope.imageName = 'about/images/sushi-train-text.png';
-  $scope.aboutTitle = 'About Me';
+.controller('Resume', function($scope) {
+  $scope.image = 'resume/images/sushi-cat-logo.png';
+  $scope.imageName = 'resume/images/sushi-train-text.png';
+  $scope.resumeTitle = 'Resume';
 
   $scope.favorite_things = {
     'front_end': {

@@ -19,22 +19,47 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<!--<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#/about">XS</a>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right xiu">
-        <!--<li class="active"><a href="#/about">about</a></li>
-        <li><a href="#/view1">experience</a></li>
-        <li><a href="#/view2">blog</a></li>-->
       </ul>
     </div>
   </div>
-</nav>
+</nav>-->
 
-  <div ng-view></div>
+<div class="navbar navbar-pink navbar-fixed-left">
+  <a class="navbar-brand" href="#">
+    <img ng-src="about/images/sushi-cat-logo.png" class="logo-img" width="160"/>
+  </a>
+  <ul class="nav navbar-nav">
+   <li><a href="#/about">About Me</a></li>
+   <li><a href="#/resume">Resume</a></li>
+   <li><a href="#/portfolio">Portfolio</a></li>
+   <li><a href="#/blog">Blog</a></li>
+   <li>
+     <a href="https://github.com/xshen4/" target="_blank">
+       <i class="fa fa-github"></i>
+     </a>
+     <a href="https://www.linkedin.com/in/xiuli-shen-7b925646" target="_blank">
+       <i class="fa fa-linkedin"></i>
+     </a>
+     <a href="mailto:xiuli.j.shen@gmail.com?Subject=Hi%20Xiuli!" target="_blank">
+       <i class="fa fa-envelope"></i>
+     </a>
+   </li>
+  </ul>
+</div>
+
+
+<div class="container">
+ <div class="row">
+   <div ng-view></div>
+ </div>
+</div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -44,6 +69,7 @@
   <script src="bower_components/requirejs/require.js"></script>
   <script src="app.js"></script>
   <script src="about/about.js"></script>
+  <script src="resume/resume.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
