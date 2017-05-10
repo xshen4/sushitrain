@@ -12,7 +12,7 @@ angular.module('myApp.resume', ['ngRoute'])
 .controller('Resume', function($scope) {
   $scope.image = 'resume/images/sushi-cat-logo.png';
   $scope.imageName = 'resume/images/sushi-train-text.png';
-  $scope.resumeTitle = 'Resume';
+  $scope.resumeTitle = '/ Xiuli Shen / Resume';
 
   $scope.favorite_things = {
     'front_end': {

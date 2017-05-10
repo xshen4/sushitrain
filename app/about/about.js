@@ -12,7 +12,8 @@ angular.module('myApp.about', ['ngRoute'])
 .controller('About', function($scope) {
   $scope.image = 'about/images/sushi-cat-logo.png';
   $scope.imageName = 'about/images/sushi-train-text.png';
-  $scope.aboutTitle = 'About Me';
+  $scope.xiuImg = 'about/images/xiu-moto.png';
+  $scope.aboutTitle = '/ Xiuli Shen / About Me';
 
   $scope.favorite_things = {
     'front_end': {
@@ -54,6 +55,10 @@ angular.module('myApp.about', ['ngRoute'])
     'email' : {
       'class' : 'fa fa-envelope',
       'link' : 'mailto:xiuli.j.shen@gmail.com?Subject=Hi%20Xiuli!'
+    },
+    'youtube' : {
+      'class': 'fa fa-youtube-square',
+      'link': 'https://www.youtube.com/channel/UCbExX5G-7ft49cdPftr-W3g'
     }
   }
 
