@@ -12,7 +12,7 @@ angular.module('myApp.about', ['ngRoute'])
 .controller('About', function($scope) {
   $scope.image = 'about/images/sushi-cat-logo.png';
   $scope.imageName = 'about/images/sushi-train-text.png';
-  $scope.xiuImg = 'about/images/xiu-moto.png';
+  $scope.xiuImg = 'about/images/xiu.png';
   $scope.aboutTitle = '/ Xiuli Shen / About Me';
 
   $scope.favorite_things = {

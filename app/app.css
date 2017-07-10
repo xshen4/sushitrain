@@ -4,80 +4,188 @@ body {
   /*background-color: #ffedfc;*/
 }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+@media only screen and (max-width: 500px) {
+  .menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+  }
+
+  .nav>li>a {
+    padding-left: 5px;
+  }
+
+  .navbar-brand {
+    padding-left: 0px;
+  }
+
+  .navbar-nav>li>a {
+    font-size: 20px;
+  }
+
+  .navbar-brand>img {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin: 0px;
+    display: flex;
+  }
+
+  .menu:before {
+    content: "[";
+  }
+
+  .menu:after {
+    content: "]";
+  }
+
+  .menu > li {
+    display: inline;
+  }
+
+  .menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+  }
+
+  .menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+    height: auto;
+  }
+
+  .navbar-fixed-left {
+    width: 100%;
+    position: fixed;
+    border-radius: 0;
+    height: 10%;
+  }
+  .navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    display: flex;
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+  .navbar-fixed-left + .container {
+    padding-left: 90px;
+  }
+
+  /* On using dropdown menu (To right shift popuped) */
+  .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+  }
+
+  .nav>li>a:focus, .nav>li>a:hover {
+      text-decoration: none;
+      background-color: transparent;
+      color: #000000;
+  }
+
+  .navbar-pink {
+    background-color: #ffedfc;
+    border-color: #e39dd6;
+  }
+
+  .fa {
+      font-size: 35px;
+      color: #2788b6;
+  }
 }
 
-.menu:before {
-  content: "[";
-}
+  @media only screen and (min-width: 500px) {
+    .menu {
+      list-style: none;
+      border-bottom: 0.1em solid black;
+      margin-bottom: 2em;
+      padding: 0 0 0.5em;
+    }
 
-.menu:after {
-  content: "]";
-}
+    .menu:before {
+      content: "[";
+    }
 
-.menu > li {
-  display: inline;
-}
+    .menu:after {
+      content: "]";
+    }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
+    .menu > li {
+      display: inline;
+    }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
+    .menu > li:before {
+      content: "|";
+      padding-right: 0.3em;
+    }
 
-.navbar {
-  margin-bottom: 0px;
-}
+    .menu > li:nth-child(1):before {
+      content: "";
+      padding: 0;
+    }
 
-.navbar-brand {
-  height: auto;
-}
+    .navbar {
+      margin-bottom: 0px;
+    }
 
-.navbar-fixed-left {
-  width: 200px;
-  position: fixed;
-  border-radius: 0;
-  height: 100%;
-}
+    .navbar-brand {
+      height: auto;
+    }
 
-.navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 139px;
-  display: flex;
-  font-size: 25px;
-  font-weight: 100;
-}
+    .navbar-fixed-left {
+      width: 200px;
+      position: fixed;
+      border-radius: 0;
+      height: 100%;
+    }
 
-.navbar-fixed-left + .container {
-  padding-left: 90px;
-}
+    .navbar-fixed-left {
+      width: 200px;
+      position: fixed;
+      border-radius: 0;
+      height: 100%;
+    }
 
-/* On using dropdown menu (To right shift popuped) */
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
-}
+    .navbar-fixed-left .navbar-nav > li {
+      float: none;  /* Cancel default li float: left */
+      width: 139px;
+      display: flex;
+      font-size: 25px;
+      font-weight: 100;
+    }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: none;
-    background-color: transparent;
-    color: #000000;
-}
+    .navbar-fixed-left + .container {
+      padding-left: 90px;
+    }
 
-.navbar-pink {
-  background-color: #ffedfc;
-  border-color: #e39dd6;
-}
+    /* On using dropdown menu (To right shift popuped) */
+    .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+      margin-top: -50px;
+      margin-left: 140px;
+    }
 
-.fa {
-    font-size: 35px;
-    color: #2788b6;
+    .nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent;
+        color: #000000;
+    }
+
+    .navbar-pink {
+      background-color: #ffedfc;
+      border-color: #e39dd6;
+    }
+
+    .fa {
+        font-size: 35px;
+        color: #2788b6;
+    }
 }
